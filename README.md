@@ -1,6 +1,14 @@
 # firebase_authentication_minggu11
 
 A new Flutter project.
+<p><h2>Gambar Hasil Praktikum dan Tugas Minggu 11</h2></p>
+<p><h3>Hasil Praktikum</h3></p>
+<p>Tampilan Halaman Login </p>
+<img src="/image/praktikum1.jpg" width="200px" height="400px"></img>
+<p>Tampilan Halaman Pilih Akun </p>
+<img src="/image/praktikum2.jpg" width="200px" height="400px"></img>
+<p>Tampilan Halaman Berhasil Login </p>
+<img src="/image/praktikum3.jpg" width="200px" height="400px"></img>
 
 ## Getting Started
 
