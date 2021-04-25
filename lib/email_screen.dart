@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'login_page.dart';
 import 'sign_in.dart';
 
-class FirstScreen extends StatelessWidget {
+class EmailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,12 +19,19 @@ class FirstScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: <Widget>[
-              CircleAvatar(
-                backgroundImage: NetworkImage(
-                  imageUrl,
-                ),
-                radius: 60,
-                backgroundColor: Colors.transparent,
+              Text(
+                'Hello,',
+                style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white),
+              ),
+              Text(
+                'Welcome!',
+                style: TextStyle(
+                    fontSize: 50,
+                    fontWeight: FontWeight.w900,
+                    color: Colors.white),
               ),
               SizedBox(height: 40),
               Text(
@@ -35,13 +42,13 @@ class FirstScreen extends StatelessWidget {
                     color: Colors.black54),
               ),
               Text(
-                name,
+                '$name',
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.deepPurple,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Text(
                 'EMAIL',
                 style: TextStyle(
@@ -50,7 +57,7 @@ class FirstScreen extends StatelessWidget {
                     color: Colors.black54),
               ),
               Text(
-                email,
+                '$email',
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.deepPurple,
@@ -59,7 +66,7 @@ class FirstScreen extends StatelessWidget {
               SizedBox(height: 40),
               RaisedButton(
                 onPressed: () {
-                    signOutGoogle();
+                    signOutEmail();
                   Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(builder: (context) {
                     return LoginPage();

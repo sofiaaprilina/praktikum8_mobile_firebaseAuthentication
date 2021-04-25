@@ -45,3 +45,52 @@ Future<void> signOutGoogle() async {
   await googleSignIn.signOut();
   print("User Signed Out");
 }
+
+Future<User> signUpWithEmail(String nameUser, String email, String password) async {
+  await Firebase.initializeApp();
+  try {
+    UserCredential authResult = await FirebaseAuth.instance
+        .createUserWithEmailAndPassword(email: email, password: password);
+    User user = authResult.user;
+    if (user != null) {
+// Checking if email and name is null
+      assert(user.email != null);
+      email = user.email;
+      assert(nameUser != null);
+      name = nameUser;
+      
+      return user;
+    }
+      return null;
+  } catch (e) {
+    print(e.toString());
+    return null;
+  }
+}
+
+Future<User> signInWithEmail(String emailUser, String password) async {
+  await Firebase.initializeApp();
+  try {
+    UserCredential authResult = await FirebaseAuth.instance
+        .signInWithEmailAndPassword(email: emailUser, password: password);
+    User user = authResult.user;
+    if (user != null) {
+// Checking if email and name is null
+      assert(user.email != null);
+      email = emailUser;
+      assert(name != null);
+      name = name;
+      
+      return user;
+    }
+    return null;
+  } catch (e) {
+    print(e.toString());
+    return null;
+  }
+}
+
+Future<void> signOutEmail() async {
+  await FirebaseAuth.instance.signOut();
+  print("User Signed Out");
+}
