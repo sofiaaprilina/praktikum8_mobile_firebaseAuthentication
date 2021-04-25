@@ -9,6 +9,16 @@ A new Flutter project.
 <img src="/image/praktikum2.jpg" width="200px" height="400px"></img>
 <p>Tampilan Halaman Berhasil Login </p>
 <img src="/image/praktikum3.jpg" width="200px" height="400px"></img>
+<p></p>
+<p><h3>Hasil Tugas</h3></p>
+<p>(1)Tampilan Halaman Login </p>
+<img src="/image/Tugas1.jpg" width="200px" height="400px"></img>
+<p>Tampilan Halaman Sign Up With Email </p>
+<img src="/image/Tugas2.jpg" width="200px" height="400px"></img>
+<p>Tampilan Halaman Sign In With Email </p>
+<img src="/image/Tugas3.jpg" width="200px" height="400px"></img>
+<p>Tampilan Halaman Berhasil Sign In </p>
+<img src="/image/Tugas4.jpg" width="200px" height="400px"></img>
 
 ## Getting Started
 
