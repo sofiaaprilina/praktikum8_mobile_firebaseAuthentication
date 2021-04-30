@@ -35,21 +35,6 @@ class EmailScreen extends StatelessWidget {
               ),
               SizedBox(height: 40),
               Text(
-                'NAME',
-                style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black54),
-              ),
-              Text(
-                '$name',
-                style: TextStyle(
-                    fontSize: 25,
-                    color: Colors.deepPurple,
-                    fontWeight: FontWeight.bold),
-              ),
-              SizedBox(height: 10),
-              Text(
                 'EMAIL',
                 style: TextStyle(
                     fontSize: 15,

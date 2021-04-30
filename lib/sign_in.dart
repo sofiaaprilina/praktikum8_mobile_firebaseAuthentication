@@ -78,8 +78,6 @@ Future<User> signInWithEmail(String emailUser, String password) async {
 // Checking if email and name is null
       assert(user.email != null);
       email = emailUser;
-      assert(name != null);
-      name = name;
       
       return user;
     }
